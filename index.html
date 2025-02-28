@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Date" content="2025-02-19T17:13:30+09:00">
+  <meta name="description" content="KFC 햄버거, 치킨, 빵, 커피, 제조음료">
+  <meta name="keywords" content="KFC 햄버거, 치킨, 빵, 커피, 제조음료">
+  <meta name="author" content="KFC KOREA">
+  <meta name ="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Subject" content="햄버거, 치킨">
+<!--   <meta http-equiv="Copyright" content="copyright@dothome">
+  <meta http-equiv="Build" content="2025-02-19">
+  <meta http-equiv="Last-Modified" content="Mon,20 Jul 2025 19:30:30"> -->
+  <title>KFC</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="../remodel/images/KFC/favicon.svg" type="image/x-icon">
+  <!-- css초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+  <!-- 나눔고딕 웹폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <!-- 아이콘폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- 공통서식 common.css -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+
+  <!-- 메인콘텐츠 서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+  <!-- 2. table버전 서식 -->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+
+  <!-- 3. mobile버전 서식 -->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+
+  <!-- flexslide css서식 -->
+  <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
+
+  <!-- jQuery라이브리 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- flexslide script -->
+  <script src="./script/jquery.flexslider.js"></script>
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+
+  <!-- 헤더영역 시작 -->
+  <header>
+    <div class="header_inner">
+      <h1>
+        <a href="index.html" title="메인페이지로 바로가기">
+          <img src="../remodel/images/KFC/logo.png" alt="KFC 로고">
+        </a>
+      </h1>
+
+      <!-- 오른쪽 상단 내비게이션 local Navigation Bar -->
+      <nav class="lnb">
+        <ul>
+          <li><a href="index.html" title="로그인">로그인</a></li>
+          <li><a href="order.html" title="주문내역조회">주문내역조회</a></li>
+          <li><a href="custorm.html" title="고객센터">고객센터</a></li>
+          <li><a href="job.html" title="인재채용">인재채용</a></li>
+          <li>
+            <input type="search" id="sh" placeholder="검색어 입력">
+            <label for="sh"><i class="fas fa-search"></i></label>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 모바일, 태블릿에서 보여주기 위한 메뉴, 버튼 -->
+      <label for="toggle" id="t_btn"><i class="fas fa-bars"></i></label>
+      
+      <i class="fas fa-search m_search"></i>
+    </div>
+
+    <!-- 메인메뉴 2단 내비게이션 -->
+    <nav class="gnb">
+      <label for="toggle"><i class="fas fa-times"></i></label>
+      <ul>
+        <li><a href="#" title="딜리버리">DELIVERY<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="brand.html" title="추천메뉴">추천메뉴</a></li>
+            <li><a href="coffee.html" title="치킨 & 세트">치킨 & 세트</a></li>
+            <li><a href="coffee.html" title="버거 & 세트">버거 & 세트</a></li>
+            <li><a href="coffee.html" title="스낵 & 사이드">스낵 & 사이드</a></li>
+            <li><a href="coffee.html" title="음료">음료</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="메뉴소개">STORE<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="store.html" title="매장찾기">매장찾기</a></li>
+          </ul>
+        </li>
+        <li><a href="store.html" title="매장안내">EVENT<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="store.html" title="프로모션">프로모션</a></li>
+            <li><a href="store.html" title="새소식">새소식</a></li>
+            <li><a href="store.html" title="공지사항">공지사항</a></li>
+          </ul>
+        </li>
+        <li><a href="community.html" title="커뮤니티">KFC SERVICE<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="community.html" title="멤버십">멤버십</a></li>
+            <li><a href="d.html" title="카드 & 상품권">카드 & 상품권</a></li>
+            <li><a href="d.html" title="KFC TIP">KFC TIP</a></li>
+            <li><a href="d.html" title="고객센터">고객센터</a></li>
+            <li><a href="d.html" title="전체메뉴보기">전체메뉴보기</a></li>
+          </ul>
+        </li>
+        <li><a href="fran.html" title="가맹창업안내">가맹창업안내<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="fran.html" title="가맹 창업 설명회 신청">가맹 창업 설명회 신청</a></li>
+            <li><a href="e.html" title="가맹 상담 문의">가맹 상담 문의</a></li>
+            <li><a href="e.html" title="임대 상담 문의">임대 상담 문의</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인콘텐츠 시작 -->
+  <main>
+    <article class="slide">
+      <h2>메인슬라이드</h2>
+      <!-- 반응형 슬라이드 -->
+      <div class="flexslider">
+        <ul class="slides">
+          <li><img src="../remodel/images/KFC/XXwdoRn7iU31.png" alt="메인이미지1"></li>
+          <li><img src="../remodel/images/KFC/SaGnMhFDEkkX.jpg" alt="메인이미지2"></li>
+          <li><img src="../remodel/images/KFC/NKVws2Qx14xK.png" alt="메인이미지2"></li>
+          <li><img src="../remodel/images/KFC/nMEXoP48VMzU.png" alt="메인이미지2"></li>
+        </ul>
+      </div>
+    </article>
+
+    <section class="con">
+      <h2>메인콘텐츠 영역</h2>
+      <article class="banner">
+        <h2>신제품 광고</h2>
+        <a href="#" title="신제품 광고">
+          <img src="./images/KFC/laALl08uKbaj.png" alt="신제품 광고">
+        </a>
+      </article>
+
+      <article class="story">
+        <h2>프로모션&amp;딜리버리</h2>
+        <a href="#" title="프로모션" class="bs">
+          <img src="./images/KFC/banner_promotion_v2.png" alt="프로모션" id="bs_img">
+        </a>
+        <a href="#" title="딜리버리">
+          <img src="./images/KFC/banner_Delivery_v2.png" alt="딜리버리">
+        </a>
+      </article>
+
+      <article class="ad">
+        <h2>TV광고</h2>
+        <a href="#" title="tv광고">
+          <img src="./images/KFC/sddefault.jpg" alt="tv광고">
+        </a>
+      </article>
+
+      <article class="notice">
+        <h2 class="title">공지사항<i class="fas fa-plus"></i></h2>
+        <ul>
+          <li><a href="a.html" title="내용">[안내] 만 14세 미만 고객의 회원정보 파기 / 이용에 대한 공지</a></li>
+          <li><a href="a.html" title="내용">[안내] KFC KOREA 개인정보 처리방침 외 개정 안내 (2025년 2월 10일 개정)</a></li>
+          <li><a href="a.html" title="내용">설연휴 딜리버리 운영안내</a></li>
+          <li><a href="a.html" title="내용">[안내] KFC KOREA 개인정보처리방침 개정 안내 (2025년 1월 6일 개정)</a></li>
+        </ul>
+      </article>
+
+      <article class="store">
+        <h2></h2>
+        <a href="#" title="스토어">
+          <img src="./images/KFC/banner_storesearch.png" alt="스토어" id="store_img">
+        </a>
+      </article>
+
+      <article class="news">
+        <h2 class="title">온라인<i class="fas fa-plus"></i></h3>
+        <ul>
+          <li><a href="a.html" title="내용">KFC 멤버십제도 변경 안내 (2021년 12월 7일 부터)</a></li>
+          <li><a href="a.html" title="내용">오리지널블랙라벨치킨 단종 공지</a></li>
+          <li><a href="a.html" title="내용">APP 쿠폰 사용 안내</a></li>
+          <li><a href="a.html" title="내용">KFC 치킨나이트 운영안내</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="a.html" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="a.html" title="사이트 이용약관">사이트 이용약관</a></li>
+        <li><a href="a.html" title="위치정보 이용약관">위치정보 이용약관</a></li>
+        <li><a href="a.html" title="KFC 선불카드 이용약관">KFC 선불카드 이용약관</a></li>
+        <li><a href="a.html" title="영상정보처리기기 운영관리 방침">영상정보처리기기 운영관리 방침</a></li>
+      </ul>
+    </nav>
+
+    <address>
+      <p>서울 송파구 올림픽로 299, 2F KFC / TEL : 02)6020-8383 월~금 09:00~12:00, 13:00~17:00 공휴일 제외 / FAX : 02)6020-8399</p>
+      <p>사업자등록번호 : 201-81-89723 / 주식회사 케이에프씨코리아 / 대표자 : 신호상 / ⓒ 2017 KFC KOREA Co., Ltd. All Rights Reserved.</p>
+    </address>
+  </footer>
+  
+  <script>
+    
+    const brand_img = document.getElementById('bs_img');
+
+    //brand story에 마우스 오버시 이미지 변경
+    // brand_img.addEventListener('mouseover', function(){
+    //   this.src='./images/mbn0202ov.png';
+    // });
+
+    //마우스 아웃시 이미지 다시 원래대로 변경
+    // brand_img.addEventListener('mouseout', function(){
+    //   this.src='./images/mbn0202.png';
+    // });
+
+    //store_img변경하기
+    let store_img = document.getElementById('store_img');
+    store_img.addEventListener('mouseover',function(){
+      this.src='./images/kfc/banner_storesearch2.png';
+    });
+    store_img.addEventListener('mouseout',function(){
+      this.src='./images/kfc/banner_storesearch.png';
+    });
+
+
+    // html문서가 로딩이 끝나면 슬라이드를 동작하게 한다.
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+
+    window.addEventListener('resize', function(){
+      const mnu = document.querySelectorAll('.gnb > ul > li > a');
+      let w = this.innerWidth; //현재 브라우저창의 너비값을 변수에 담아
+      console.log(w); //출력해본다.
+
+      //만약에 768보다 아래이면 모바일 내비게이션 서브 클릭시 나오게
+      if(w<768){
+
+        //메인메뉴 클릭시 서브메뉴 나오게 한다.
+        mnu.forEach(function(item){
+          item.addEventListener('click', function(e){
+            
+            e.preventDefault(); //이벤트 무력화(새로고침방지)
+
+            const subMnu = item.nextElementSibling;
+            if(subMnu && subMnu.classList.contains('sub')){
+              
+              subMnu.classList.toggle('act');
+
+              const icon = item.querySelector('.fa-angle-down');
+
+              if(icon){
+                icon.classList.toggle('rotate');
+              }
+            }
+          });
+        })
+        //다시 클릭시 서브메뉴 숨긴다.
+
+      }
+    });
+  </script>
+</body>
+</html>
